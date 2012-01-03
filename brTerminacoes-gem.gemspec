@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobias"]
   s.date = "2012-01-03"
-  s.description = " longer description of your gem"
+  s.description = "TODO: longer description of your gem"
   s.email = "tiagotobias2003@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -56,3 +56,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
+
