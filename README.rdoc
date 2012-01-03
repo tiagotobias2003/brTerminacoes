@@ -50,10 +50,12 @@ Para criar relatórios dos sms dispardos utilize o método relatorio que retorna
 
   sms.relatorio(data_inicial, data_final, modo)
 
-data_inicial: Data inicial do relatório. String no formato YYYY-MM-DD
-data_final: Data final do relatório. String no formato YYYY-MM-DD
-modo: se enviado "resume" :Relatório Resumido
-modo: se enviado "detail" :Relatório Detalhado
+onde:
+
+* data_inicial: Data inicial do relatório. String no formato YYYY-MM-DD
+* data_final: Data final do relatório. String no formato YYYY-MM-DD
+* modo: se enviado "resume" :Relatório Resumido
+* modo: se enviado "detail" :Relatório Detalhado
 
 == Copyright
 
