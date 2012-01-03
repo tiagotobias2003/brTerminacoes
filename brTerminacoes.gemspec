@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "brTerminacoes"
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobias"]
@@ -24,12 +24,12 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "brTerminacoes-gem.gemspec",
-    "lib/brTerminacoes-gem.rb",
+    "brTerminacoes.gemspec",
+    "lib/brTerminacoes.rb",
     "test/helper.rb",
-    "test/test_brTerminacoes-gem.rb"
+    "test/test_brTerminacoes.rb"
   ]
-  s.homepage = "http://github.com/tiagotobias2003/brTerminacoes-gem"
+  s.homepage = "http://github.com/tiagotobias2003/brTerminacoes"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"
