@@ -2,7 +2,7 @@ require 'net/http'
 
 class Sms
 
-  attr_reader :usuario, :senha
+  attr_reader :usuario, :senha, :id
 
   def initialize(usuario, senha)
     @usuario = usuario
@@ -17,6 +17,16 @@ class Sms
     conectar(@params)
   end
 
+  def enviar(from, mensagem, numeros)
+    @params = { :fuse => 'send_msg', :id => @id, :from => from, :msg => mensagem, :number => numeros }
+    conectar(@params)
+  end
+
+  def relatorio(data_inicial, data_final, modo)
+   @params = { :fuse => 'get_report', :id => @id, :dt_begin => data_inicial, :dt_end => data_final, :mode => modo }
+    conectar(@params)
+  end
+
   private
 
   def conectar(params)
@@ -25,25 +35,8 @@ class Sms
     if res.is_a?(Net::HTTPSuccess)
       res.body
     else
-      "Entre em contato com suport e informe a mensagem: #{res.body}"
+      "Entre em contato com suporte e informe a mensagem: #{res.body}"
     end
   end
 
-#  params = { :fuse => 'get_balance', :id => id}
-#  uri.query = URI.encode_www_form(params)
-#  res = Net::HTTP.get_response(uri)
-#  print "saldo: "
-#  puts res.body if res.is_a?(Net::HTTPSuccess)
-
-#  params = { :fuse => 'get_report', :id => id, :dt_begin => '2012-01-01', :dt_end => '2012-01-03', :mode => 'detail' }
-#  uri.query = URI.encode_www_form(params)
-#  res = Net::HTTP.get_response(uri)
-#  print "relatorio detalhado:"
-#  puts res.body if res.is_a?(Net::HTTPSuccess)
-
-#  params = { :fuse => 'send_msg', :id => id, :from => 'tobias', :msg => mensagem, :number => numero }
-#  uri.query = URI.encode_www_form(params)
-#  res = Net::HTTP.get_response(uri)
-#  print "resposta do envio:"
-#  puts res.body if res.is_a?(Net::HTTPSuccess)
 end

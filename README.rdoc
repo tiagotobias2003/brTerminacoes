@@ -2,15 +2,14 @@
 
 Description goes here.
 
-== Contributing to brTerminacoes
+== Contribuindo para brTerminacoes
 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+* Confira na branch master para se certificar de que o recurso não foi implementado ou o erro não foi corrigido.
+* Confira o issue tracker para se certificar de que alguém já não tenha solicitado e / ou contribuído lo
+* Fork o projeto
+* Iniciar um ramo de funcionalidade / bugfix
+* Commit e empurre até que você esteja satisfeito com sua contribuição
+* Certifique-se de adicionar testes para isso. Isto é importante para não quebrar a GEM em uma futura versão.
 
 == Copyright
 
