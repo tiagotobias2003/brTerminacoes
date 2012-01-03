@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "brTerminacoes-gem"
   gem.homepage = "http://github.com/tiagotobias2003/brTerminacoes-gem"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "gem para envio de sms através da brTerminações"
+  gem.description = "gem para envio de sms através da brTerminações"
   gem.email = "tiagotobias2003@gmail.com"
   gem.authors = ["Tobias"]
   # dependencies defined in Gemfile
