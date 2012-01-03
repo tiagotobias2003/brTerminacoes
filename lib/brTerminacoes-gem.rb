@@ -2,9 +2,11 @@ require 'net/http'
 
 class BrTerminacoes
 
-  attr_accessor :usuario, :senha
+  attr_reader :usuario, :senha
 
-  def initialize()
+  def initialize(usuario, senha)
+    @usuario = usuario
+    @senha = senha
     @uri = URI('http://webapi.comtele.com.br/api/api_fuse_connection.php')
     @params = { :fuse => 'get_id', :user => @usuario, :pwd => @senha }
     @id = conectar(@params)
