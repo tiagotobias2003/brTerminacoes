@@ -17,8 +17,8 @@ class Sms
     conectar(@params)
   end
 
-  def enviar(from, mensagem, numeros)
-    @params = { :fuse => 'send_msg', :id => @id, :from => from, :msg => mensagem, :number => numeros }
+  def enviar(remetente, mensagem, numeros)
+    @params = { :fuse => 'send_msg', :id => @id, :from => remetente, :msg => mensagem, :number => numeros }
     conectar(@params)
   end
 

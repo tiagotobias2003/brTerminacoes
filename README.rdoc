@@ -1,6 +1,6 @@
 = brTerminacoes
 
-Description goes here.
+Essa gem tem a finalidade de facilitar o desenvolvimento de aplicações ruby on rails que enviem SMS atráves do gateway brTerminações. Essa biblioteca é open source e a empresa brTerminações não tem nenhuma responsabilidade sobre seu conteúdo. Essa é uma iniciativa da lunaltas.com, empresa que apoia fortemente o desenvolvimento de software livre no Brasil, sendo ela a idealizadora desse projeto.
 
 == Contribuindo para brTerminacoes
 
@@ -11,7 +11,50 @@ Description goes here.
 * Commit e empurre até que você esteja satisfeito com sua contribuição
 * Certifique-se de adicionar testes para isso. Isto é importante para não quebrar a GEM em uma futura versão.
 
+== Utilizando brTerminacoes
+
+== Instalação
+
+Adicione ao seu Gemfile em seguida, executar +bundle+ para instalá-lo.
+
+  gem "brTerminacoes"
+
+== Instanciando
+
+Crie um objeto sms passando como parâmetro o usuário e senha da sua conta brTerminações (mesmo que seja conta teste).
+
+  sms = Sms.new(usuario, senha)
+
+== Enviando menssagem
+
+Após criar o objeto chame o método enviar passando os parametros necessários para o envio. Essa função retorna 'true' se a menssagem for enviada com sucesso.
+
+  sms.enviar(remetente, mensagem, numeros)
+
+onde:
+
+* remetente é uma string que indica quem envio o sms
+* menssagem é uma string com máximo de 130 caractéres com o conteúdo da menssagem
+* numeros é uma string com os números que receberão a mensagem. Ex: "1199889988,8488778877,2177999977"
+
+
+== Consultando Saldo
+
+Objeto instanciado possui um método saldo que retorna uma string contendo o numero de menssagem que podem ser enviadas e data da consulta.
+
+  sms.saldo()
+
+== Gerando relatórios
+
+Para criar relatórios dos sms dispardos utilize o método relatorio que retorna uma string contendo dados de todos as mensagens envidas em um determinado periodo.
+
+  sms.relatorio(data_inicial, data_final, modo)
+
+data_inicial: Data inicial do relatório. String no formato YYYY-MM-DD
+data_final: Data final do relatório. String no formato YYYY-MM-DD
+modo: se enviado "resume" :Relatório Resumido
+modo: se enviado "detail" :Relatório Detalhado
+
 == Copyright
 
-Copyright (c) 2012 Lunaltas. See LICENSE.txt for
-further details.
+Copyright (c) 2012 Lunaltas. Veja o arquivo LICENSE.txt para mais detalhes.
