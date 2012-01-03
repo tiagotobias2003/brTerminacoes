@@ -18,8 +18,8 @@ class BrTerminacoes
   private
 
   def conectar(params)
-    self.uri.query = URI.encode_www_form(params)
-    res = Net::HTTP.get_response(uri)
+    @uri.query = URI.encode_www_form(params)
+    res = Net::HTTP.get_response(@uri)
     if res.is_a?(Net::HTTPSuccess)
       res.body
     else
