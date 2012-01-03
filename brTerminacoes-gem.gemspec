@@ -5,8 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "brTerminacoes-gem"
-  s.version = "0.0.1"
-  s.description = "longer description of your gem"
+  s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobias"]
@@ -57,3 +56,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
+
