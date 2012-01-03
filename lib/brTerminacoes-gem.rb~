@@ -1,4 +1,4 @@
-module brTerminacoes
+module BrTerminacoes
 
   require 'net/http'
   attr_reader :usuario, :senha, :id

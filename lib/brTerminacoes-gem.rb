@@ -25,6 +25,7 @@ module BrTerminacoes
       res.body
     else
       "Entre em contato com suport e informe a mensagem: #{res.body}"
+    end
   end
 
 #  params = { :fuse => 'get_balance', :id => id}
