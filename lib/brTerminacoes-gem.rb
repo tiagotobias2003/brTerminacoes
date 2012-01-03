@@ -13,7 +13,7 @@ class BrTerminacoes
   end
 
   def saldo()
-    @params = { :fuse => 'get_balance', :id => id}
+    @params = { :fuse => 'get_balance', :id => @id}
     conectar(@params)
   end
 
