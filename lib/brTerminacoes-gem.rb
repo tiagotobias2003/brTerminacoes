@@ -1,6 +1,7 @@
-module BrTerminacoes
+require 'net/http'
 
-  require 'net/http'
+class BrTerminacoes
+
   attr_reader :usuario, :senha, :id
 
   def initialize(usuario, senha)
