@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "brTerminacoes-gem.gemspec",
+    "brTerminacoes.gemspec",
     "lib/brTerminacoes-gem.rb",
     "test/helper.rb",
     "test/test_brTerminacoes-gem.rb"
