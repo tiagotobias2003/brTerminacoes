@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
+    "brTerminacoes-gem.gemspec",
     "lib/brTerminacoes-gem.rb",
     "test/helper.rb",
     "test/test_brTerminacoes-gem.rb"
