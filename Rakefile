@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "brTerminacoes-gem"
-  gem.homepage = "http://github.com/tiagotobias2003/brTerminacoes-gem"
+  gem.name = "brTerminacoes"
+  gem.homepage = "http://github.com/tiagotobias2003/brTerminacoes"
   gem.license = "MIT"
   gem.summary = "gem para envio de sms através da brTerminações"
   gem.description = "gem para envio de sms através da brTerminações"

@@ -1,6 +1,6 @@
 require 'net/http'
 
-class BrTerminacoes
+class Sms
 
   attr_reader :usuario, :senha
 
