@@ -34,7 +34,7 @@ Após criar o objeto chame o método enviar passando os parametros necessários 
 onde:
 
 * remetente é uma string que indica quem envio o sms
-* menssagem é uma string com máximo de 130 caractéres com o conteúdo da menssagem
+* menssagem é uma string com máximo de 140 caractéres com o conteúdo da menssagem
 * numeros é uma string com os números que receberão a mensagem. Ex: "1199889988,8488778877,2177999977"
 
 
